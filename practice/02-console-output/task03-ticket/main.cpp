@@ -18,9 +18,7 @@ int main()
     int issued;                  
     bool confirmed = false;        
 
-    int total = ticketPrice * tickets + serviceFee;
-    
-    int savedIssued = issued;      
+    int total = ticketPrice * tickets + serviceFee;     
     
     std::cout << "\nIT MEETUP TICKET\n";
     std::cout << "Organizer: IT Academy\n";
@@ -30,18 +28,16 @@ int main()
     std::cout << "Tickets: " << tickets << "\n";
     std::cout << "Service fee: " << serviceFee << " RUB\n";
     std::cout << "Total: " << total << " RUB\n";
-
-    std::cout << std::boolalpha;
+    
     std::cout << "Issued before: " << issued << "\n";
     std::cout << "Confirmed before: " << confirmed << "\n";
 
-   
     issued = tickets;     
     confirmed = true;     
 
     std::cout << "Issued after: " << issued << "\n";
     std::cout << "Confirmed after: " << confirmed << "\n";
-    std::cout << "Saved issued: " << savedIssued << "\n";
+    std::cout << "Saved issued: " << issued << "\n";
 
     return 0;
 }
