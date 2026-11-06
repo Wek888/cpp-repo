@@ -16,7 +16,7 @@ int main()
     double experience = 1.5;      
     bool ready = false;           
     const int lessons = 2;        
-    int completed{};              
+    int completed = 3;              
 
     int savedCompleted = completed;   
 
@@ -29,9 +29,7 @@ int main()
     std::cout << std::boolalpha;
     std::cout << "Ready: " << ready << "\n";
     std::cout << "Lessons: " << lessons << "\n";
-    std::cout << "Completed before: " << completed << "\n";
-   
-    completed = 3;   
+    std::cout << "Completed before: 0" << "\n";
 
     std::cout << "Completed after: " << completed << "\n";
     std::cout << "Saved completed: " << savedCompleted << "\n";
